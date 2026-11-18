@@ -1,0 +1,59 @@
+2026-03-14 00:00:03 INFO  [catalog] reindex started items=1840
+2026-03-14 00:00:07 DEBUG [catalog] reindex batch=1 took=312ms
+2026-03-14 00:00:11 INFO  [catalog] reindex finished items=1840 took=4210ms
+2026-03-14 03:30:00 INFO  [mailer] daily digest queued recipients=212
+2026-03-14 03:30:05 DEBUG [mailer] smtp connect took=88ms
+2026-03-14 07:02:15 INFO  [auth] login ok user=u1042
+2026-03-14 08:12:40 WARN  [auth] failed login attempts=3 ip=203.0.113.7
+2026-03-14 08:12:41 INFO  [orders] order created order=10430 items=2
+2026-03-14 08:12:42 INFO  [payment] charge started order=10430 amount=1890
+2026-03-14 08:12:43 DEBUG [payment] gateway request order=10430 took=845ms
+2026-03-14 08:12:44 INFO  [payment] charge ok order=10430 took=870ms
+2026-03-14 09:15:02 INFO  [orders] order created order=10435 items=1
+2026-03-14 09:15:03 INFO  [payment] charge started order=10435 amount=540
+2026-03-14 09:15:04 INFO  [payment] charge ok order=10435 took=612ms
+2026-03-14 09:47:30 DEBUG [catalog] query category=fiction took=14ms
+2026-03-14 09:47:31 DEBUG [catalog] query category=science took=23ms
+2026-03-14 10:05:11 INFO  [orders] order created order=10438 items=4
+2026-03-14 10:05:12 INFO  [payment] charge started order=10438 amount=4120
+2026-03-14 10:05:42 ERROR [payment] charge failed order=10438 reason=gateway_timeout took=30004ms
+2026-03-14 10:05:43 INFO  [payment] retry scheduled order=10438 after ERROR from gateway
+2026-03-14 10:07:44 INFO  [payment] retry charge ok order=10438 took=701ms
+2026-03-14 10:30:00 WARN  [catalog] slow query category=history took=1203ms
+2026-03-14 11:20:15 INFO  [orders] order created order=10441 items=2
+2026-03-14 11:20:16 INFO  [payment] charge started order=10441 amount=2350
+2026-03-14 11:20:17 ERROR [payment] charge declined order=10441 reason=insufficient_funds took=530ms
+2026-03-14 11:20:18 WARN  [orders] order=10441 moved to status=cancelled
+2026-03-14 12:02:09 DEBUG [auth] session refreshed user=u0877
+2026-03-14 12:15:33 INFO  [orders] order created order=10443 items=1
+2026-03-14 12:15:34 INFO  [payment] charge started order=10443 amount=990
+2026-03-14 12:15:35 ERROR [orders] order=10443 not confirmed: payment service returned 502
+2026-03-14 12:15:36 ERROR [payment] charge failed order=10443 reason=bad_gateway took=2010ms
+2026-03-14 12:40:00 INFO  [mailer] receipt sent order=10435 took=154ms
+2026-03-14 13:05:21 WARN  [orders] cannot parse order=n/a in callback from partner
+2026-03-14 13:44:10 INFO  [orders] order created order=10445 items=3
+2026-03-14 13:44:11 INFO  [payment] charge ok order=10445 took=498ms
+2026-03-14 14:10:55 ERROR [mailer] cannot send payment receipt order=10445 smtp=451 took=3002ms
+2026-03-14 14:11:30 INFO  [mailer] receipt resent order=10445 took=190ms
+2026-03-14 15:00:00 INFO  [catalog] price update items=212
+2026-03-14 15:00:02 DEBUG [catalog] price update took=1850ms
+2026-03-14 15:30:12 INFO  [orders] order created order=10447 items=2
+2026-03-14 15:30:13 INFO  [payment] charge started order=10447 amount=3100
+2026-03-14 15:30:15 ERROR [payment] charge failed order=10447 reason=card_expired took=640ms
+2026-03-14 16:22:08 INFO  [auth] login ok user=u0123
+2026-03-14 17:01:45 INFO  [orders] order created order=10449 items=1
+2026-03-14 17:01:46 WARN  [orders] merge duplicate order=10449 into order=10448
+2026-03-14 17:01:47 ERROR [orders] order=10449 stuck in status=pending_payment
+2026-03-14 17:30:00 DEBUG [payment] reconcile batch took=120ms
+2026-03-14 18:12:12 INFO  [orders] order created order=10450 items=2
+2026-03-14 18:12:13 INFO  [payment] charge ok order=10450 took=733ms
+2026-03-14 19:05:33 WARN  [auth] failed login attempts=5 ip=198.51.100.23
+2026-03-14 19:05:50 ERROR [auth] account locked user=u0456 after 5 attempts
+2026-03-14 20:15:02 INFO  [orders] order created order=10452 items=5
+2026-03-14 20:15:03 INFO  [payment] charge started order=10452 amount=6780
+2026-03-14 20:15:04 ERROR [payment] charge failed order=10452 reason=gateway_error took=1530ms
+2026-03-14 21:00:00 INFO  [catalog] cache warmup items=300
+2026-03-14 21:00:05 DEBUG [catalog] cache warmup took=2750ms
+2026-03-14 22:30:41 WARN  [payment] gateway latency high took=2210ms
+2026-03-14 23:00:00 INFO  [mailer] daily digest sent recipients=212 took=5120ms
+2026-03-14 23:59:58 INFO  [catalog] log rotated
