@@ -1,0 +1,5 @@
+title: "Разбор логов в Linux: задачи с решениями"
+description: "15 задач по разбору логов в Linux: grep, awk, sort, uniq, cut и bash-скрипты на логах nginx и CSV. Решения и разбор типичных ошибок"
+lang: ru
+kramdown:
+  parse_block_html: true

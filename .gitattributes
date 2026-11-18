@@ -1,0 +1,5 @@
+# данные должны читаться с LF на любой ОС, иначе check.py и решения разойдутся
+data/* text eol=lf
+expected/* text eol=lf
+*.py text eol=lf
+README.md text eol=lf
